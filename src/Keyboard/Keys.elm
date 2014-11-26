@@ -1,4 +1,16 @@
-module Keyboard.Keys where
+module Keyboard.Keys (Key, equals,
+                      directionKeys, isKeyDown,
+                      a, b, c, d, e, f, g, h, i,
+                      j, k, l, m, n, o, p, q, r,
+                      s, t, u, v, w, x, y, z, 
+                      ctrl, shift, tab, super, meta,
+                      windows, commandLeft, commandRight,
+                      space, enter, arrowRight, arrowLeft,
+                      arrowUp, arrowDown, backspace,
+                      delete, insert, end, home, pageDown,
+                      pageUp, escape, f2, f4, f8, f9, f10,
+                      one, two, three, four, five, six, seven,
+                      eight, nine, zero) where
 {-| Standard keyboard constants.
 
 # Data types
@@ -41,7 +53,7 @@ import Keyboard
 
 {-| Type alias to make it clearer what integers are supposed to represent.
 -}
-type Key =
+type alias Key =
  {keyCode: Keyboard.KeyCode
  ,name: String}
 
